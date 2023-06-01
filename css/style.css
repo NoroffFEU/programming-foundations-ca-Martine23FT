@@ -1,4 +1,282 @@
+html {
+	font-size: 18px;
+	background-color: #c0bbae;
+}
+
 body {
 	font-family: sans-serif;
 	padding: 1em 3em;
+	background-color: white;
+	width: 1440px;
+	margin: 0 auto;
+	padding: 0;
+	box-shadow: 0 20px 16px 0 rgba(0,0,0,2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+p {
+	font-size: 1rem;
+	font-family: 'roboto', sans-serif;
+	line-height: 1.5;
+}
+
+h1,
+h2 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+h1 {
+	font-size: 2.2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	letter-spacing: 5px;
+	color: #313927;
+}
+
+h3 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	padding-top: 4%;
+}
+
+/*----------------HEADER----------------*/
+
+header {
+    display: flex;
+    justify-content: end;
+    align-items: top;
+    background-color: #2E2C21;
+    height: 150px;
+	position: fixed;
+	top: 0;
+	width: 1440px;
+	z-index: 999;
+}
+
+#header-nav {
+    padding: 4% 6% 0% 0%;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    display: inline-block;
+	font-family: 'lato', sans-serif;
+}
+
+.nav-link:hover {
+	transform: scale(1.1);
+}
+
+#menu-checkbox,
+.hamburger-icon {
+  display: none;
+}
+
+/*----------------MAIN----------------*/
+
+.background {
+	width: 1440px;
+	height: 830px;
+	background-image: url(/images/theframe.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 80%;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	margin-top: 130px;
+	position: fixed;
+}
+
+/*----------------SECTION----------------*/
+
+.other-content {
+	position: absolute;
+	top: 930px;
+	width: 1440px;
+}
+
+.bottom {
+	height: 880px;
+	width: 100%;
+	display: flex;
+	align-items: top;
+	justify-content: space-between;
+	background-color: #FDFDFD;
+	padding-bottom: 6%;
+}
+
+.info {
+	width: 35%;
+	padding: 7% 0% 0% 10%;
+}
+
+.title h1,
+.title h2 {
+	margin: 0;
+}
+
+#product-img {
+	height: 700px;
+	width: 700px;
+	float: right;
+	padding: 13% 0% 0% 10%;
+}
+
+.colors,
+.sizes {
+	display: flex;
+	gap: 20px;
+}
+
+.circles {
+	height: 35px;
+	width: 35px;
+	border-radius: 40px;
+	border: 2px solid grey;
+}
+
+.circles:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+#circle1 {
+	background-color: black;
+}
+
+#circle2 {
+	background-image: url(/images/eik.jpg);
+	background-size: cover;
+}
+
+#circle3 {
+	background-image: url(/images/mørkeik.jpg);
+	background-size: cover;
+}
+
+#circle4 {
+	background-color: white;
+}
+
+.options {
+	height: 42px;
+	width: 56px;
+	background-color: #E6E6E6;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.options:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.price {
+	display: flex;
+	gap: 40px;
+}
+
+.line {
+	height: 1px;
+	background-color: black;
+	opacity: 50%;
+	width: 80%;
+	margin-top: 10%;
+}
+
+.total {
+	font-size: 1.1rem;
+	padding-top: 3%;
+}
+
+.btn {
+	display: inline-block;
+	padding: 15px 36px;
+	margin: 10px 0;
+	color: #313927;
+	background-color: white;
+	text-decoration: none;
+	font-size: .9rem;
+	border-radius: 40px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	letter-spacing: 2px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.19);
+	border: 1.5px solid #313927;
+	cursor: pointer;
+}
+
+.btn:hover {
+	transform: scale(1.1);
+	transition: .4s;
+}
+
+.background-2 {
+	background-image: url(/images/theframe1.png);
+	width: 100%;
+	height: 800px;
+	background-size: cover;
+	background-position: 30% 70%;
+}
+
+/*----------------FOOTER----------------*/
+
+footer {
+    background: #2E2C21;
+    color: white;
+    padding: 3% 0%;
+	width: 1440px;
+	padding: 0%;
+}
+
+#footer-wrapper {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+	margin: 0 auto;
+	padding: 2% 0%;
+}
+
+.footer-heading {
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    font-family: 'Tajawal', sans-serif;
+	letter-spacing: 2px;
+	font-size: .9rem;
+}
+
+.footer-heading:hover {
+    color: #ff8c1a;
+    cursor: pointer;
+}
+
+footer p {
+    line-height: 1.0;
+	font-size: .8rem;
+}
+
+footer i {
+    padding: 1em;
+    padding-left: 0;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: white;
+}
+
+footer i:hover {
+    color: #ff8c1a;
+    transform: scale(1.1);
 }
