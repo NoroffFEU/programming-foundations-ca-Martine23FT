@@ -1,30 +1,22 @@
-// IPHONE //
+// TV //
 
 var tv = {
     brand: "Samsung",
     model: "The Frame",
     isSmartTv: true,
-
-    sizes: {
-        size: 45,
-        size: 65,
-        size: 72,
-        size: 85,
-    },
-
-    colors: {
-        color1: "Black",
-        color2: "Dark Oak",
-        color3: "Light Oak",
-        color4: "White",
-    }
+    colors: ["Black", "Dark Oak", "Light Oak", "White"],
+    inches: [45, 65, 72, 85],
 } 
 
 console.log(tv);
 
 // IF & ELSE - Lage dette om i forhold til fargevalg og størrelse? //
 
-var inStock = true;
+var tvOption = {
+    color: "Black",
+    size: 45,
+    inStock: true
+}
 
 if (inStock === true) {
     console.log("In stock");
@@ -36,6 +28,4 @@ else {
 console.log(inStock);
 
 // FUNCTION ON BUTTON //
-
-
 
