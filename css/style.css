@@ -7,15 +7,17 @@ body {
 	font-family: sans-serif;
 	padding: 1em 3em;
 	background-color: white;
-	width: 1440px;
 	margin: 0 auto;
 	padding: 0;
+	display: flex;
+	justify-content: center;
 }
 
 p {
 	font-size: 1rem;
 	font-family: 'roboto', sans-serif;
 	line-height: 1.5;
+	color: #1e2318;
 }
 
 h1,
@@ -31,7 +33,6 @@ h1 {
 h2 {
 	font-size: 1.5rem;
 	letter-spacing: 5px;
-	color: #313927;
 }
 
 h3 {
@@ -50,12 +51,12 @@ header {
     height: 150px;
 	position: fixed;
 	top: 0;
-	width: 1440px;
+	width: 100%;
 	z-index: 999;
 }
 
 #header-nav {
-    padding: 4% 6% 0% 0%;
+    padding: 2% 6% 0% 0%;
     display: flex;
     gap: 30px;
 }
@@ -92,19 +93,20 @@ header {
 	font-size: 1.6rem;
 	font-weight: 300;
 	letter-spacing: 7px;
+	color: white;
 }
 
 /*----------------MAIN----------------*/
 
 .background {
-	width: 1440px;
-	height: 840px;
+	width: 75%;
+	height: 900px;
 	background-image: url(/images/theframe.png);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 100% 80%;
+	background-position: 20% 20%;
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	justify-content: end;
 	margin-top: 150px;
 	position: fixed;
@@ -114,8 +116,8 @@ header {
 
 .other-content {
 	position: absolute;
-	top: 930px;
-	width: 1440px;
+	top: 1050px;
+	width: 75%;
 }
 
 .bottom {
@@ -130,7 +132,7 @@ header {
 
 .info {
 	width: 35%;
-	padding: 7% 0% 0% 10%;
+	padding: 5% 0% 0% 10%;
 }
 
 .title h1,
@@ -139,21 +141,21 @@ header {
 }
 
 #product-img {
-	height: 700px;
-	width: 700px;
+	height: 800px;
+	width: 900px;
 	float: right;
-	padding: 13% 0% 0% 10%;
+	padding: 10% 0% 0% 10%;
 }
 
 .colors,
 .sizes {
 	display: flex;
-	gap: 20px;
+	gap: 25px;
 }
 
 .circles {
-	height: 35px;
-	width: 35px;
+	height: 40px;
+	width: 40px;
 	border-radius: 40px;
 	border: 2px solid grey;
 }
@@ -189,11 +191,14 @@ header {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	box-sizing: border-box;
 }
 
 .options:hover {
 	transform: scale(1.1);
+	transition: .6s;
 	cursor: pointer;
+	border: 1px solid #2E2C21;
 }
 
 .price {
@@ -206,7 +211,7 @@ header {
 	background-color: black;
 	opacity: 50%;
 	width: 80%;
-	margin-top: 10%;
+	margin-top: 50px;
 }
 
 #total,
@@ -251,7 +256,6 @@ footer {
     background: #2E2C21;
     color: white;
     padding: 3% 0%;
-	width: 1440px;
 	padding: 0%;
 }
 
@@ -282,6 +286,7 @@ footer {
 footer p {
     line-height: 1.0;
 	font-size: .8rem;
+	color: white;
 }
 
 footer i {
