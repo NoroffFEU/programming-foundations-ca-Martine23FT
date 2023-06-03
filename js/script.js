@@ -6,10 +6,22 @@ var tv = {
     isSmartTv: true,
     colors: ["Black", "Dark Oak", "Light Oak", "White"],
     inches: [45, 65, 72, 85],
+    on: false,
 } 
 
 console.log(tv);
+document.getElementById("brand").innerHTML = tv.brand;
 
+
+var ignitionButton = document.getElementById("ignition");
+ignitionButton.addEventListener("click", function () {
+    tv.ignition();
+    document.getElementById("on").textContent = tv.on ? "On" : "Off";
+});
+
+
+
+document.querySelector("h2").innerHTML = "Its weekend"
 // IF & ELSE - Lage dette om i forhold til fargevalg og størrelse? //
 
 var tvOption = {
@@ -21,6 +33,7 @@ var tvOption = {
 if (inStock === true) {
     console.log("In stock");
 }
+
 else {
     console.log("NOT in stock");
 }
