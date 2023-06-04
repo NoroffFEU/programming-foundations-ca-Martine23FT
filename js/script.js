@@ -3,7 +3,7 @@ var tv = {
     brand: "Samsung",
     model: "The Frame",
     isSmartTv: true,
-    inches: [45, 65, 72, 85],
+    inches: [45, 65, 72, 80],
     on: false,
     inStock: true,
     price: 10.000,
@@ -45,7 +45,6 @@ console.log(tv);
 
 document.getElementById("brand").innerHTML = tv.brand;
 document.getElementById("model").innerHTML = tv.model;
-document.getElementById("inches").innerHTML = tv.inches;
 
 var colorBtn1 = document.getElementById("color1");
 colorBtn1.addEventListener("click", function () {
@@ -66,5 +65,3 @@ tv.colorFour(); })
 var powerBtn = document.getElementById("power");
 powerBtn.addEventListener("click", function () {
 tv.power(); })
-
-// colors: ["Black", "Dark Oak", "Light Oak", "White"],

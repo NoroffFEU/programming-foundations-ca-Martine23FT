@@ -23,7 +23,7 @@ body {
 	width: 40px;
 	border-radius: 40px;
 	border: none;
-	background-color: red;
+	background: radial-gradient(50% 50% at 50% 50%, #FF4646 20%, rgba(163, 0, 0, 0.82) 100%);
 	cursor: pointer;
 }
 
@@ -66,4 +66,18 @@ body {
 
 #color4 {
 	background-color: white;
+}
+
+.size {
+	height: 40px;
+	width: 46px;
+	border: 1px solid grey;
+	border-radius: 5px;
+	margin: 6px;
+	cursor: pointer;
+}
+
+.size:hover {
+	transform: scale(1.1);
+	transition: .6s;
 }
