@@ -39,6 +39,7 @@ var tv = {
     },
 }
 
+
 //Possible to do the same with inches? //
 
 console.log(tv);
