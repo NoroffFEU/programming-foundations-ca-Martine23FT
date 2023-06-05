@@ -10,10 +10,16 @@ var tv = {
     inStock: true,
     price: [10000, 12399, 13499, 14999],
     colors:["Black", "Dark Oak", "Light Oak", "White"],
-    
-    power: function () {
-        tv.on = !tv.on;
-        document.getElementById("on").textContent = tv.on ? "On" : "Off";
+
+    availability: function () {
+        tv.inStock = !tv.inStock;
+        if (total>= 3) {
+            console.log("NOT in stock")
+        }
+
+        else {
+            console.log ("In stock")
+        }
     },
 }
 
@@ -37,10 +43,6 @@ displayColorName("color2", 1);
 displayColorName("color3", 2);
 displayColorName("color4", 3);
 
-var powerBtn = document.getElementById("power");
-powerBtn.addEventListener("click", function () {
-tv.power(); 
-});
 
 function displayTvPrice(size, number){
     var sizeBtn = document.getElementById(size);
@@ -53,3 +55,29 @@ displayTvPrice("size1", 0);
 displayTvPrice("size2", 1);
 displayTvPrice("size3", 2);
 displayTvPrice("size4", 3);
+
+///// How can I change this so that it only affect one button at a time? 
+
+function buttonColor(size) {
+    var changeColor = document.getElementById(size);
+    changeColor.addEventListener ("click", function () {
+        changeColor.style.backgroundColor = "#CBCBCB";
+        changeColor.style.borderColor = "#9B9B9B";
+    });
+}
+
+buttonColor ("size1")
+buttonColor ("size2")
+buttonColor ("size3")
+buttonColor ("size4")
+
+///// 
+
+var total =50;
+
+if (total >=50) {
+    console.log("this is expensive")
+}
+else {
+    console.log ("Cheap")
+}
