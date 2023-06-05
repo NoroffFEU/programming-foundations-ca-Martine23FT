@@ -1,3 +1,23 @@
+//HEADER//
+
+var toggle = document.getElementById('navbar-toggle');
+var navbar = document.getElementById('navbar-nav');
+
+if(navbar) {
+    navbar.addEventListener('click', () => {
+        navbar.classList.remove('show')
+        toggle.classList.remove('show')
+    })
+}
+
+if(toggle) {
+    toggle.addEventListener('click', () => { 
+        navbar.classList.toggle('show');
+        toggle.classList.toggle('show');
+    })
+}
+
+//OBJECT//
 
 var tv = {
     brand: "Samsung",
