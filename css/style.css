@@ -251,6 +251,39 @@ header {
 	margin: 5% 0%;
 }
 
+.quantity {
+	padding: 4% 0%;
+	display: flex;
+	align-items: center;
+}
+
+.select {
+	margin-left: 4%;
+	display: flex;
+	gap: 8%;
+}
+
+#instock {
+	height: 40px;
+	width: 130px;
+	box-sizing: border-box;
+}
+
+#addToCart {
+	height: 40px;
+	width: 130px;
+	border-radius: 40px;
+	border: 1.5px solid #1e2318;
+	color: #1e2318;
+}
+
+#addToCart:hover {
+	background-color: #1e2318;
+	color: white;
+	transform: scale(1.1);
+	transition: .6s;
+}
+
 .background-2 {
 	background-image: url(/images/theframe1.png);
 	width: 100%;
@@ -258,6 +291,17 @@ header {
 	background-size: cover;
 	background-position: 30% 70%;
 }
+
+
+
+/*<div class="quantity">
+                <span>Quantity:</span>
+
+                <div class="select">
+                    <input id="instock" type="number" min="0" max="10">
+                    <button id="addToCart">ADD TO CART</button>
+                </div>
+            </div>
 
 /*----------------FOOTER----------------*/
 

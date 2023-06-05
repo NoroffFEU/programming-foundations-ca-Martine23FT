@@ -8,7 +8,7 @@ var tv = {
     inches: [45, 65, 72, 80],
     on: false,
     inStock: true,
-    price: [10000, 12399, 13499, 14999],
+    price: ["10000 kr", "12399 kr", "13499 kr", "14999 kr"],
     colors:["Black", "Dark Oak", "Light Oak", "White"],
 
     availability: function () {
