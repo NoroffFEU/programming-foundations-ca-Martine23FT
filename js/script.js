@@ -8,26 +8,17 @@ var tv = {
     inches: [45, 65, 72, 80],
     on: false,
     inStock: true,
-    price: ["10000 kr", "12399 kr", "13499 kr", "14999 kr"],
+    price: ["10.000 kr", "12.399 kr", "13.499 kr", "14.999 kr"],
     colors:["Black", "Dark Oak", "Light Oak", "White"],
-
-    availability: function () {
-        tv.inStock = !tv.inStock;
-        if (total>= 3) {
-            console.log("NOT in stock")
-        }
-
-        else {
-            console.log ("In stock")
-        }
-    },
 }
+
+var inStock = true;
+
 
 console.log(tv);
 
 document.getElementById("brand").innerHTML = tv.brand;
 document.getElementById("model").innerHTML = tv.model;
-
 
 // Buttons //
 
@@ -71,13 +62,4 @@ buttonColor ("size2")
 buttonColor ("size3")
 buttonColor ("size4")
 
-///// 
-
-var total =50;
-
-if (total >=50) {
-    console.log("this is expensive")
-}
-else {
-    console.log ("Cheap")
-}
+///// Possible to make a if / else for the quantity, with in stock and not in stock. 

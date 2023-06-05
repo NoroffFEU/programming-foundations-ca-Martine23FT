@@ -275,6 +275,7 @@ header {
 	border-radius: 40px;
 	border: 1.5px solid #1e2318;
 	color: #1e2318;
+	cursor: pointer;
 }
 
 #addToCart:hover {
