@@ -78,15 +78,32 @@ displayTvPrice("size4", 3);
 function buttonColor(size) {
     var changeColor = document.getElementById(size);
     changeColor.addEventListener ("click", function () {
-        changeColor.style.backgroundColor = "#CBCBCB";
-        changeColor.style.borderColor = "#9B9B9B";
+       handleBtnClick
     });
 }
 
-buttonColor ("size1")
-buttonColor ("size2")
-buttonColor ("size3")
-buttonColor ("size4")
+buttonColor("size1");
+buttonColor("size2");
+buttonColor("size3");
+buttonColor("size4");
+
+var button = document.getElementById("size1");
+function handleBtnClick(event){
+
+    button.classList.remove('active');
+
+    var clickedButton = event.target;
+    clickedButton.classList.add('active');
+}
+
+document.addEventListener('click', function(event){
+    if(!event.target.matches('#size1')) {
+       button.classList.remove('active');
+    }
+});
+
+
+
 
 ///tvOption1 = {
     ///screenSize: 45,

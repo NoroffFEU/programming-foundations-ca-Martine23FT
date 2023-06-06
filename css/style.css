@@ -173,6 +173,10 @@ header {
 	font-size: .9rem;
 }
 
+.active {
+	background-color: yellow; /* Change this to the desired active color */
+}
+
 .size {
 	height: 42px;
 	width: 56px;
