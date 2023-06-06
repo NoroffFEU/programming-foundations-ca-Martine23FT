@@ -276,6 +276,7 @@ header {
 	border: 1.5px solid #1e2318;
 	color: #1e2318;
 	cursor: pointer;
+	background-color: white;
 }
 
 #addToCart:hover {
@@ -292,17 +293,6 @@ header {
 	background-size: cover;
 	background-position: 30% 70%;
 }
-
-
-
-/*<div class="quantity">
-                <span>Quantity:</span>
-
-                <div class="select">
-                    <input id="instock" type="number" min="0" max="10">
-                    <button id="addToCart">ADD TO CART</button>
-                </div>
-            </div>
 
 /*----------------FOOTER----------------*/
 
