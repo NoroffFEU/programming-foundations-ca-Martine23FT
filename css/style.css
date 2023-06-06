@@ -100,18 +100,20 @@ header {
 
 /*-------------BACKGROUND---------------*/
 
-.background {
+.slideshow-container {
+    max-width: 100%;
 	width: 75%;
-	height: 900px;
-	background-image: url(/images/theframe.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 20% 20%;
-	display: flex;
-	align-items: flex-end;
-	justify-content: end;
+    margin: auto;
 	margin-top: 150px;
 	position: fixed;
+}
+
+.slideshow-container img {
+	width: 100%;
+	height: 900px;
+	display: none;
+	margin: 0 auto;
+	object-fit: cover;
 }
 
 /*-------------OTHER CONTENT---------------*/
@@ -124,13 +126,12 @@ header {
 
 .bottom {
 	height: fit-content;
-	padding: 2% 0%;
 	width: 100%;
 	display: flex;
-	align-items: top;
+	align-items: center;
 	justify-content: space-between;
 	background-color: #FDFDFD;
-	padding-bottom: 6%;
+	padding: 6% 0%;
 }
 
 .info {
@@ -154,11 +155,18 @@ header {
 	line-height: 2;
 }
 
+.img-container {
+	width: fit-content;
+	display: flex;
+	justify-content: end;
+	align-items: end;
+	margin-left: 10%;
+}
+
 #product-img {
-	height: 800px;
-	width: 900px;
-	float: right;
-	padding: 10% 0% 0% 10%;
+	height: 65vh;
+	object-fit: contain;
+	max-width: 100%;
 }
 
 .circle,
