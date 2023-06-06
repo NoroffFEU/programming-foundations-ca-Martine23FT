@@ -265,6 +265,14 @@ header {
 	margin-left: 4%;
 	display: flex;
 	gap: 8%;
+	align-items: center;
+}
+
+#availability {
+	color: #ff8c1a;
+	font-weight: 500;
+	width: 100px;
+	text-transform: uppercase;
 }
 
 #instock {
@@ -296,6 +304,12 @@ header {
 	height: 800px;
 	background-size: cover;
 	background-position: 30% 70%;
+}
+
+.pricing {
+	display: flex;
+	align-items: center;
+	gap: 30px;
 }
 
 /*----------------FOOTER----------------*/

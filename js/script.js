@@ -6,7 +6,6 @@ var tv = {
     model: "The Frame",
     isSmartTv: true,
     inches: [45, 65, 72, 80],
-    inStock: true,
     price: ["10.000 kr", "12.399 kr", "13.499 kr", "14.999 kr"],
     colors:["Black", "Dark Oak", "Light Oak", "White"],
     options: 
@@ -101,6 +100,8 @@ document.addEventListener('click', function(event){
        button.classList.remove('active');
     }
 });
+
+
 
 
 
