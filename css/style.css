@@ -1,4 +1,393 @@
+html {
+	font-size: 18px;
+	background-color: #c0bbae;
+}
+
 body {
 	font-family: sans-serif;
 	padding: 1em 3em;
+	background-color: white;
+	margin: 0 auto;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+p {
+	font-size: 1rem;
+	font-family: 'roboto', sans-serif;
+	line-height: 1.5;
+	color: #1e2318;
+}
+
+h1,
+h2 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+h1 {
+	font-size: 2.2rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	letter-spacing: 5px;
+}
+
+h3 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	padding-top: 8%;
+	font-size: 1.1rem;
+	margin: 0;
+}
+
+/*----------------HEADER----------------*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    background-color: #2E2C21;
+    height: 150px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+#header-nav {
+    padding: 2% 12% 0% 0%;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 12px 25px;
+    display: inline-block;
+	font-family: 'lato', sans-serif;
+}
+
+.nav-link:hover {
+	transform: scale(1.1);
+}
+
+#menu-checkbox,
+.hamburger-icon {
+  display: none;
+}
+
+#logo-container {
+    margin-left: 13%;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo-container p {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.6rem;
+	font-weight: 300;
+	letter-spacing: 7px;
+	color: white;
+}
+
+/*-------------BACKGROUND---------------*/
+
+.slideshow-container {
+    max-width: 100%;
+	width: 75%;
+    margin: auto;
+	margin-top: 150px;
+	position: fixed;
+}
+
+.slideshow-container img {
+	width: 100%;
+	height: 900px;
+	display: none;
+	margin: 0 auto;
+	object-fit: cover;
+}
+
+/*-------------OTHER CONTENT---------------*/
+
+.content {
+	position: absolute;
+	top: 1050px;
+	width: 75%;
+}
+
+.bottom {
+	height: fit-content;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #FDFDFD;
+	padding: 6% 0%;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 30%;
+	margin-left: 10%;
+}
+
+.title h1,
+.title h2 {
+	margin: 0;
+}
+
+#subtitle, 
+#year {
+	font-size: 1rem;
+	margin-top: 2%;
+	color: #1e2318;
+	letter-spacing: 2px;
+	font-family: 'Lato', sans-serif;
+}
+
+#year {
+	padding-left: 5%;
+}
+
+h3 {
+	padding-top: 5%;
+}
+
+.tv-subtitle {
+	display: flex;
+}
+
+.prod-info {
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 1rem;
+	color: #1e2318;
+	line-height: 1.5;
+}
+
+.img-container {
+	width: fit-content;
+	display: flex;
+	justify-content: end;
+	align-items: end;
+	margin-left: 10%;
+}
+
+#product-img {
+	height: 65vh;
+	object-fit: contain;
+	max-width: 100%;
+}
+
+.circle,
+.sizes {
+	display: flex;
+	gap: 20px;
+}
+
+.sizes {
+	padding-top: 2%;
+	font-family: 'Lato', sans-serif;
+	font-size: .9rem;
+}
+
+.active {
+    background-color: rgb(168, 168, 168);
+}
+
+.size {
+	height: 42px;
+	width: 56px;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	border: none;
+}
+
+.size:hover {
+	transform: scale(1.1);
+	transition: .6s;
+	cursor: pointer;
+	border: 1px solid #454232;
+}
+
+#color-container {
+	padding-top: 5%;
+}
+
+.circle {
+	height: 40px;
+	width: 40px;
+	border-radius: 40px;
+	border: 2px solid grey;
+}
+
+.circle:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+.colors {
+	display: flex;
+	padding: 2% 0%;
+	gap: 20px;
+}
+
+.circle {
+	height: 40px;
+	width: 40px;
+	border-radius: 40px;
+	border: 2px solid grey;
+	cursor: pointer;
+}
+
+.circle:hover {
+	transform: scale(1.1);
+	transition: .6s;
+}
+
+#color1 {
+	background-color: black;
+}
+
+#color2 {
+	background-image: url(/images/mørkeik.jpg);
+}
+
+#color3 {
+	background-image: url(/images/eik.jpg);
+}
+
+#color4 {
+	background-color: white;
+}
+
+.line {
+	height: 1px;
+	background-color: black;
+	opacity: 50%;
+	width: 80%;
+	margin: 5% 0%;
+}
+
+.quantity {
+	padding: 4% 0%;
+	display: flex;
+	align-items: center;
+}
+
+.select {
+	margin-left: 4%;
+	display: flex;
+	gap: 8%;
+	align-items: center;
+}
+
+#availability {
+	color: #ff8c1a;
+	font-weight: 500;
+	width: 100px;
+	text-transform: uppercase;
+}
+
+#instock {
+	height: 40px;
+	width: 130px;
+	box-sizing: border-box;
+}
+
+#addToCart {
+	height: 40px;
+	width: 130px;
+	border-radius: 40px;
+	border: 1.5px solid #1e2318;
+	color: #1e2318;
+	cursor: pointer;
+	background-color: white;
+}
+
+#addToCart:hover {
+	background-color: #1e2318;
+	color: white;
+	transform: scale(1.1);
+	transition: .6s;
+}
+
+.background-2 {
+	background-image: url(/images/theframe1.png);
+	width: 100%;
+	height: 800px;
+	background-size: cover;
+	background-position: 30% 70%;
+}
+
+.pricing {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+/*----------------FOOTER----------------*/
+
+footer {
+    background: #2E2C21;
+    color: white;
+    padding: 3% 0%;
+	padding: 0%;
+}
+
+#footer-wrapper {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+	margin: 0 auto;
+	padding: 2% 0%;
+}
+
+.footer-heading {
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    margin: 0;
+    font-family: 'Tajawal', sans-serif;
+	letter-spacing: 2px;
+	font-size: .9rem;
+}
+
+.footer-heading:hover {
+    color: #ff8c1a;
+    cursor: pointer;
+}
+
+footer p {
+    line-height: 1.0;
+	font-size: .8rem;
+	color: white;
+}
+
+footer i {
+    padding: 1em;
+    padding-left: 0;
+    font-size: 1.6rem;
+    text-decoration: none;
+    color: white;
+}
+
+footer i:hover {
+    color: #ff8c1a;
+    transform: scale(1.1);
 }

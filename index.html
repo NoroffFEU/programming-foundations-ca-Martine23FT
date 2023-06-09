@@ -1,17 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programming Foundations CA</title>
-    <link href='css/style.css' rel='stylesheet' />
-    <link rel='icon' href='data:;base64,=' />
-</head>
-
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta description="Shop the TV of the year at Furnitura">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    
+        <script src="https://kit.fontawesome.com/b515e79b0f.js" crossorigin="anonymous"></script>
+    
+        <link href='css/style.css' rel='stylesheet'>
+        <link rel='icon' href='data:;base64,='>
+    
+        <title>The Frame TV</title>
+    </head>
 <body>
 
-    <script src="js/script.js"></script>
-</body>
+<!--HEADER-->
 
+<header>
+    <a href="/index.html" id="logo-container">
+        <p>FURNITURA</p>
+    </a>
+
+    <input type="checkbox" id="menu-checkbox">
+    <label for="menu-checkbox" class="hamburger-icon" aria-label="hamburger menu"><i class="fas fa-bars"></i></label>
+    
+    <nav id="header-nav">
+        <a class="nav-link" href="#">PRODUCTS</a>
+        <a class="nav-link" href="#">ABOUT</a>
+        <a class="nav-link" href="#">CONTACT</a>
+        <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+    </nav>
+</header>
+
+<!--BACKGROUND-->
+
+<div class="slideshow-container">
+    <img src="images/theframe.png" alt="Image 1">
+    <img src="images/theframe2.png" alt="Image 2">
+    <img src="images/theframe3.png" alt="Image 3">
+</div>
+
+<!--CONTENT-->
+
+<div class="content">
+
+<section class="bottom">
+    <div class="info">
+        <div class="title">
+            <h1>SAMSUNG</h1>
+            <h2>THE FRAME</h2>
+        </div>
+
+        <div class="tv-subtitle">
+            <span id="subtitle">TV OF THE YEAR: </span>
+            <span id="year"></span>
+        </div>
+
+        <h3>PRODUCT INFO:</h3>
+
+        <p>
+            Elevate your home décor and entertainment experience with the stunning Samsung 'The Frame' TV. 
+            Designed to seamlessly blend into any living space, this innovative television combines cutting-edge technology with the aesthetics 
+            of a beautifully framed artwork. Whether you're watching your favorite movies, TV shows, or displaying captivating digital art, 
+            'The Frame' delivers an immersive viewing experience like no other.
+        </p>
+
+        <div class="prod-info">    
+            <span>Brand:</span>
+            <span id="brand"></span>
+        </div>
+
+        <div class="prod-info">
+            <span>Model:</span>
+            <span id="model"></span>
+        </div>
+
+        <div class="prod-info">
+            <span>Size:</span>
+            <span id="inches"></span>
+        </div>
+
+        <div class="sizes">
+            <button id="size1" class="size">45"</button>
+            <button id="size2" class="size">65"</button>
+            <button id="size3" class="size">72"</button>
+            <button id="size4" class="size">80"</button>
+        </div>
+
+        <div id="color-container">
+            <span>Color:</span>
+            <span id="color"></span>
+    
+            <div class="colors">
+                <button id="color1" class="circle"></button>
+                <button id="color2" class="circle"></button>
+                <button id="color3" class="circle"></button>
+                <button id="color4" class="circle"></button>
+            </div>
+
+            <div class="quantity">
+                <span>Quantity:</span>
+
+                <div class="select">
+                    <input id="instock" type="number" min="0" max="10">
+                    <p id="availability"></p>
+                </div>
+            </div>
+
+            <div class="line"></div>
+        
+            <div class="pricing">
+                <span id="total">TOTAL:</span>
+                <span id="price"></span>
+                <button id="addToCart">ADD TO CART</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="img-container">
+        <img src="/images/product.png" alt="A 'The Frame'-TV with a frame in the color 'Oak'" id="product-img">
+    </div>
+</section>
+
+<div class="background-2"></div>
+
+<!--FOOTER-->
+
+<footer>
+    <div id="footer-wrapper">
+        <div class="col" id="col-1">
+            <p class="footer-heading">COPYRIGHT</p>
+            <p>© Furnitura 2023</p>
+            <p>Terms & Conditions</p>
+            <p>Privacy policy</p>
+        </div>
+
+        <div class="col" id="col-2">
+            <a href="#" class="footer-heading">CONTACT</a>
+            <p>Storgata 1, 0558 Oslo</p>
+            <p>Tlf: + 47 55 33 40 70</p>
+            <p>E-mail: contact@furnitura.com</p>
+        </div>
+
+        <div class="col" id="col-3">
+            <p class="footer-heading">SOCIAL MEDIA:</p>
+            <a href="#" aria-label="Clickable button of the Instagram-logo redirecting to the museum's Instagram-account"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Clickable button of the Facebook-logo redirecting to the museum's Facebook-account"><i class="fa-brands fa-square-facebook"></i></a>
+        </div>
+    </div>  
+</footer>
+</div>
+
+<script src="js/tv.js"></script>
+
+</body>
 </html>
