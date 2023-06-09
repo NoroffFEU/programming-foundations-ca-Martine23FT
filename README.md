@@ -9,3 +9,17 @@ Therefore, I asked Talitha for help, who provided me with good explanations and 
 I might have overcomplicated this project, but I feel like I have learnt a lot more this way.
 
 Thank you very much for your time and patience Talitha.
+
+TV:
+
+- The TV object have multiple strings, for example the brand-name and -model.
+- The object do also have 2 arrays with strings inside, for prices(4 values) and colors (4 options).
+- I also included an array with numbers for the TV-size in inches (4 values).
+- Furthermore, I added a number for "TV of the year", 2023 (1 value).
+- I made a boolean to show if the TV is a smart-TV or not.
+
+- I have made multiple functions for the buttons:
+  - The first function represents the different color-options for the TV, and when clicked, it shows the color name on the headline above the circles.
+  - The second function makes a correspondance between the different sizes and the price.
+  - The third one makes sure that when you click on a size, it changes background color. When you click another, the first one goes back to normal, while the button clicked will change.
+  - The fourth one is a slideshow that switches images every 2.5 seconds.
