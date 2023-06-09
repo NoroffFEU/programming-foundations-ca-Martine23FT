@@ -147,12 +147,33 @@ header {
 	margin: 0;
 }
 
+#subtitle, 
+#year {
+	font-size: 1rem;
+	margin-top: 2%;
+	color: #1e2318;
+	letter-spacing: 2px;
+	font-family: 'Lato', sans-serif;
+}
+
+#year {
+	padding-left: 5%;
+}
+
+h3 {
+	padding-top: 5%;
+}
+
+.tv-subtitle {
+	display: flex;
+}
+
 .prod-info {
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
 	font-size: 1rem;
 	color: #1e2318;
-	line-height: 2;
+	line-height: 1.5;
 }
 
 .img-container {
@@ -182,13 +203,12 @@ header {
 }
 
 .active {
-	background-color: yellow; /* Change this to the desired active color */
+    background-color: rgb(168, 168, 168);
 }
 
 .size {
 	height: 42px;
 	width: 56px;
-	background-color: #E6E6E6;
 	border-radius: 4px;
 	display: flex;
 	align-items: center;

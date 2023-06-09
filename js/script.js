@@ -3,46 +3,22 @@
 var tv = {
     brand: "Samsung",
     model: "The Frame",
+    year: 2023,
     isSmartTv: true,
     inches: [45, 65, 72, 80],
     price: ["10.000 kr", "12.399 kr", "13.499 kr", "14.999 kr"],
     colors:["Black", "Dark Oak", "Light Oak", "White"],
-    options: 
-    [
-        {
-            name: "Option 1",
-            screenSize: 45,
-            inStock: 3,
-            colour: "Black"     
-        },
-
-        {
-            name: "Option 2",
-            screenSize: 65,
-            inStock: 5,
-            colour: "Dark Oak"
-        },
-
-        {
-            name: "Option 3",
-            screenSize: 72,
-            inStock: 11,
-            colour: "Light Oak"
-        },
-
-        {
-            name: "Option 4",
-            screenSize: 80,
-            inStock: 17,
-            colour: "White"
-        }
-    ]
+ 
+    log: function(){
+        console.log(tv);
+    }
 } 
 
-console.log(tv);
+tv.log();
 
 document.getElementById("brand").innerHTML = tv.brand;
 document.getElementById("model").innerHTML = tv.model;
+document.getElementById("year").innerHTML = tv.year;
 
 // Buttons //
 
@@ -71,33 +47,16 @@ displayTvPrice("size2", 1);
 displayTvPrice("size3", 2);
 displayTvPrice("size4", 3);
 
-///// How can I change this so that it only affect one button at a time? 
+///// Buttons on click
 
-function buttonColor(size) {
-    var changeColor = document.getElementById(size);
-    changeColor.addEventListener ("click", function () {
-       handleBtnClick
+let buttons = document.querySelectorAll(".size");
+document.addEventListener("click", function (evt) {
+  if (evt.target.classList.contains("size")) {
+    buttons.forEach(function (button) {
+      button.classList.remove("active");
     });
-}
-
-buttonColor("size1");
-buttonColor("size2");
-buttonColor("size3");
-buttonColor("size4");
-
-var button = document.getElementById("size1");
-function handleBtnClick(event){
-
-    button.classList.remove('active');
-
-    var clickedButton = event.target;
-    clickedButton.classList.add('active');
-}
-
-document.addEventListener('click', function(event){
-    if(!event.target.matches('#size1')) {
-       button.classList.remove('active');
-    }
+    evt.target.classList.add("active");
+  }
 });
 
 /// Slideshow ///
